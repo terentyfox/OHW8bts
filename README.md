@@ -16,12 +16,14 @@ Booting Linux
 
 ![15 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1215.png)
 
+Второй вариант:
 
 ![18 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1218.png)
 
 
 ![24 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1224.png)
 
+Перед третьим вариантом оставил консоли, опять виснет, запускается только без них, далее всё ОК:
 
 ![28 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1228.png)
 
