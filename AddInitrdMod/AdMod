@@ -1,0 +1,172 @@
+Script started on Mon Dec 13 08:13:48 2021
+]0;root@localhost:~[?1034h[root@localhost ~]# mkdir /usr/lib/dracut/modules.d/01test
+]0;root@localhost:~[root@localhost ~]# scp maxad@10.0.2.2:/home/maxad/ohw/ohw8/module_setup.sh /usr/lib/dracut/modules.d/01test/module_setup.sh
+The authenticity of host '10.0.2.2 (10.0.2.2)' can't be established.
+ECDSA key fingerprint is SHA256:1l/If4662hDHwhoyJS6v9Iyl9izcOhk4k+fFfSO9aUg.
+ECDSA key fingerprint is MD5:e5:01:03:0d:f1:88:18:ca:ec:67:fd:04:74:39:32:fb.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.0.2.2' (ECDSA) to the list of known hosts.
+maxad@10.0.2.2's password: 
+module_setup.sh                                                                                                    0%    0     0.0KB/s   --:-- ETAmodule_setup.sh                                                                                                  100%  126    44.3KB/s   00:00    
+]0;root@localhost:~[root@localhost ~]# scp maxad@10.0.2.2:/home/maxad/ohw/ohw8/test.sh /usr/lib/dracut/modules.d/01test/test.sh
+maxad@10.0.2.2's password: 
+test.sh                                                                                                            0%    0     0.0KB/s   --:-- ETAtest.sh                                                                                                          100%  334   342.0KB/s   00:00    
+]0;root@localhost:~[root@localhost ~]# mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
+/sbin/dracut: line 681: warning: setlocale: LC_MESSAGES: cannot change locale (ru_RU.UTF-8): No such file or directory
+/sbin/dracut: line 682: warning: setlocale: LC_CTYPE: cannot change locale (ru_RU.UTF-8): No such file or directory
+Executing: /sbin/dracut -f -v /boot/initramfs-3.10.0-1127.el7.x86_64.img 3.10.0-1127.el7.x86_64
+dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut module 'plymouth' will not be installed, because command 'plymouthd' could not be found!
+dracut module 'plymouth' will not be installed, because command 'plymouth' could not be found!
+dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
+dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
+dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
+dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
+*** Including module: bash ***
+*** Including module: nss-softokn ***
+*** Including module: i18n ***
+*** Including module: kernel-modules ***
+Omitting driver floppy
+*** Including module: qemu ***
+*** Including module: rootfs-block ***
+*** Including module: terminfo ***
+*** Including module: udev-rules ***
+Skipping udev rule: 40-redhat-cpu-hotplug.rules
+Skipping udev rule: 91-permissions.rules
+*** Including module: biosdevname ***
+*** Including module: systemd ***
+*** Including module: usrmount ***
+*** Including module: base ***
+*** Including module: fs-lib ***
+*** Including module: shutdown ***
+*** Including modules done ***
+*** Installing kernel module dependencies and firmware ***
+*** Installing kernel module dependencies and firmware done ***
+*** Resolving executable dependencies ***
+*** Resolving executable dependencies done***
+*** Hardlinking files ***
+*** Hardlinking files done ***
+*** Stripping files ***
+*** Stripping files done ***
+*** Generating early-microcode cpio image contents ***
+*** No early-microcode cpio image needed ***
+*** Store current command line parameters ***
+*** Creating image file ***
+*** Creating image file done ***
+*** Creating initramfs image file '/boot/initramfs-3.10.0-1127.el7.x86_64.img' done ***
+]0;root@localhost:~[root@localhost ~]# lsinitrd -m /boot/initramfs-3.10.0-1127.el7.x86_64.img
+Image: /boot/initramfs-3.10.0-1127.el7.x86_64.img: 12M
+========================================================================
+Version: dracut-033-568.el7
+
+dracut modules:
+bash
+nss-softokn
+i18n
+kernel-modules
+qemu
+rootfs-block
+terminfo
+udev-rules
+biosdevname
+systemd
+usrmount
+base
+fs-lib
+shutdown
+========================================================================
+]0;root@localhost:~[root@localhost ~]# /usr/lib/dracut/modules.d/01test[1@l[1@s[1@ 
+module_setup.sh  test.sh
+]0;root@localhost:~[root@localhost ~]# ls /usr/lib/dracut/modules.d/01test[1P[1P[1@c[1@p /usr/lib/dracut/modules.d/01test/module_setup.sh /usr/lib/dracut/modules.d/01test/module_setup.sh[1P[1@-
+]0;root@localhost:~[root@localhost ~]# rm /usr/lib/dracut/modules.d/01test/module_setup.sh
+rm: remove regular file '/usr/lib/dracut/modules.d/01test/module_setup.sh'? yes
+]0;root@localhost:~[root@localhost ~]# rm /usr/lib/dracut/modules.d/01test/module_setup.sh[root@localhost ~]# [49@cp /usr/lib/dracut/modules.d/01test/module_setup.sh /usr/lib/dracut/modules.d/01test/module-setup.sh[root@localhost ~]# [65Pls /usr/lib/dracut/modules.d/01test
+module-setup.sh  test.sh
+]0;root@localhost:~[root@localhost ~]# mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
+/sbin/dracut: line 681: warning: setlocale: LC_MESSAGES: cannot change locale (ru_RU.UTF-8): No such file or directory
+/sbin/dracut: line 682: warning: setlocale: LC_CTYPE: cannot change locale (ru_RU.UTF-8): No such file or directory
+Executing: /sbin/dracut -f -v /boot/initramfs-3.10.0-1127.el7.x86_64.img 3.10.0-1127.el7.x86_64
+dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut module 'plymouth' will not be installed, because command 'plymouthd' could not be found!
+dracut module 'plymouth' will not be installed, because command 'plymouth' could not be found!
+dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
+dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
+dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
+dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
+*** Including module: bash ***
+*** Including module: test ***
+*** Including module: nss-softokn ***
+*** Including module: i18n ***
+*** Including module: kernel-modules ***
+Omitting driver floppy
+*** Including module: qemu ***
+*** Including module: rootfs-block ***
+*** Including module: terminfo ***
+*** Including module: udev-rules ***
+Skipping udev rule: 40-redhat-cpu-hotplug.rules
+Skipping udev rule: 91-permissions.rules
+*** Including module: biosdevname ***
+*** Including module: systemd ***
+*** Including module: usrmount ***
+*** Including module: base ***
+*** Including module: fs-lib ***
+*** Including module: shutdown ***
+*** Including modules done ***
+*** Installing kernel module dependencies and firmware ***
+*** Installing kernel module dependencies and firmware done ***
+*** Resolving executable dependencies ***
+*** Resolving executable dependencies done***
+*** Hardlinking files ***
+*** Hardlinking files done ***
+*** Stripping files ***
+*** Stripping files done ***
+*** Generating early-microcode cpio image contents ***
+*** No early-microcode cpio image needed ***
+*** Store current command line parameters ***
+*** Creating image file ***
+*** Creating image file done ***
+*** Creating initramfs image file '/boot/initramfs-3.10.0-1127.el7.x86_64.img' done ***
+]0;root@localhost:~[root@localhost ~]# mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)[root@localhost ~]# [23Pls /usr/lib/dracut/modules.d/01test[root@localhost ~]# rm /usr/lib/dracut/modules.d/01test/module_setup.sh[root@localhost ~]# [49@cp /usr/lib/dracut/modules.d/01test/module_setup.sh /usr/lib/dracut/modules.d/01test/module-setup.sh[root@localhost ~]# [65Pls /usr/lib/dracut/modules.d/01test[root@localhost ~]# lsinitrd -m /boot/initramfs-3.10.0-1127.el7.x86_64.img
+Image: /boot/initramfs-3.10.0-1127.el7.x86_64.img: 12M
+========================================================================
+Version: dracut-033-568.el7
+
+dracut modules:
+bash
+test
+nss-softokn
+i18n
+kernel-modules
+qemu
+rootfs-block
+terminfo
+udev-rules
+biosdevname
+systemd
+usrmount
+base
+fs-lib
+shutdown
+========================================================================
+]0;root@localhost:~[root@localhost ~]# exit
+exit
+
+Script done on Mon Dec 13 08:29:38 2021
