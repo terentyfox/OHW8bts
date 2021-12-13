@@ -36,9 +36,18 @@ Booting Linux
 
 
 
-
-
-
 # Renaming VG in LVM
+
+  Процесс отображён в логе - файл LVMor
+  
 # Adding initrd module
+
+Всё, что касается этой задачи - в каталоге AddInitrdMod
+Чтобы увидеть птицу счастья снова пришлось убрать упоминание консоли в параметрах:
+
+![44 image](https://github.com/terentyfox/OHW8bts/blob/main/AddInitrdMod/1244.png)
+
+![45 image](https://github.com/terentyfox/OHW8bts/blob/main/AddInitrdMod/1245.png)
+
+лог действий - в файле AdMod в том же каталоге.
 
