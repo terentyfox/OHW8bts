@@ -9,6 +9,25 @@ Booting Linux
 
 ![second image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1202.png)
 
+То есть плюсом к рекомендации удалены упоминания консолей, вуаля:
+
+![8 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1208.png)
+
+
+![15 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1215.png)
+
+
+![18 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1218.png)
+
+
+![24 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1224.png)
+
+
+![28 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1228.png)
+
+![33 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1233.png)
+
+![36 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1236.png)
 
 
 
