@@ -23,9 +23,11 @@ Booting Linux
 
 ![24 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1224.png)
 
-Перед третьим вариантом оставил консоли, опять виснет, запускается только без них, далее всё ОК:
+Вошёл с новым паролем:
 
 ![28 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1228.png)
+
+Перед третьим вариантом оставил консоли, опять виснет, запускается только без них, далее всё ОК:
 
 ![33 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1233.png)
 
