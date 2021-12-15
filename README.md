@@ -32,12 +32,15 @@ Booting Linux
 
 ![28 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1228.png)
 
-Перед третьим вариантом оставил консоли, опять виснет, запускается только без них, далее всё ОК:
+Перед третьим вариантом оставил консоли, опять виснет, запускается только без них, далее всё ОК. Дальше аналогично 2 варианту, но инициализируется шел из sysroot:
 
 ![33 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1233.png)
 
 ![36 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1236.png)
 
+И вход с новым паролем:
+
+![37 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1237.png)
 
 
 
