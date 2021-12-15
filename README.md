@@ -11,12 +11,17 @@ Booting Linux
 
 То есть плюсом к рекомендации удалены упоминания консолей, вуаля:
 
+Далее перемонтирую корневую ФС в режиме записи и сбрасываю пароль root-а.
+Создаю в корне файл /.autorelabel указывающий Selinux перемаркировать корневую фс с новым паролем root
+
 ![8 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1208.png)
 
 
 ![15 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1215.png)
 
 Второй вариант:
+
+Параметр rd.break вызывает прерывание загрузки до перехода управления к ядру. Меняется пароль root и далее загрузка осуществлена с примонтированным sysroot вместо /, для доступа к корню основной фс применён chroot. А после создания .autorelabel при reboot происходит перемаркировка системных файлов.
 
 ![18 image](https://github.com/terentyfox/OHW8bts/blob/main/ThreeEntrcs/1218.png)
 
